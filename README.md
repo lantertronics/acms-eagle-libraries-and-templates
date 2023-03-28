@@ -1,6 +1,14 @@
 Here's a set of Eagle files for the benefit of my ECE4450: Analog Circuits for Music Synthesis studnets; hopefully other folks will find them helpful as well.
 
+# Spring 2023: Tangible Waves template
+
+To use acms_project_starter_template, I recommend copying the schematic file and giving it a new filename and deleting the parts you don't need, but *not* copying the board file. Official tangible waves modules use surface mount parts for manufacturability and to keep the size small. Since we're using through-hole parts, we need more space, so I made it three Tangible Waves module units wide (75 millimeters). You can try making this 50 millimeters wide instead if you have a small circuit (change the width to 1.9685 inches and delete the two rightmost mounting holes and then scoot the headers over).
+
+# Spring 2021: Eurorack/MOTM template
+
 To use acms_project_starter_template, I recommend copying the schematic file and giving it a new filename and deleting the parts you don't need, but *not* copying the board file. The board file shows where to put mounting holes (size 0.12587425 = 3.2 mm), but otherwise isn't too useful, since once you start adding your own parts, Eagle will just plunk them down one after another in a straight line going downward. If you place your parts on the schematic first and then tell Eagle to make the PCB, the parts will appear in a nice convenient grid pattern on the side of the PCB.
+
+# Libraries
 
 ota_upgraded.lbr and synthdiy_upgraded.lbr are librraries I found elsewhere that didn't want to open in the newest version of Eagle; apparently the name for layer 88 got scrabled as part of the input process. I just changed the layer name to "weird" to get something that would import without error.
 
